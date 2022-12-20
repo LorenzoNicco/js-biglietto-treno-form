@@ -55,6 +55,12 @@ input {
     height: 2rem;
 }
 
+select {
+    border: 1px solid cadetblue;
+    border-radius: 10px;
+    height: 2rem;
+}
+
 button {
     color: cadetblue;
     border: 1px solid cadetblue;
@@ -63,9 +69,14 @@ button {
     padding: 5px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* TICKET RESULT */
 #ticket-result {
     margin-top: 10px;
+    display: none;
 }
 
 h2 {
@@ -86,13 +97,25 @@ h2 {
     border-bottom: 1px solid gray;
     height: 100px;
     display: flex;
+    width: 100%;
+}
+
+.name-space {
+    background-color: gray;
+    padding: 10px;
+    width: 25%;
 }
 
 #fill-name {
-    background-color: gray;
-    padding: 10px;
+    margin-top: 10px;
 }
 
 #fill-details {
     padding: 10px;
+    width: 75%;
+}
+
+th {
+    width: 200px;
+    text-align: start;
 }
