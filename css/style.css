@@ -10,14 +10,25 @@
 /********************************************** 
     MILESTONE 2
 **********************************************/
-main {
+body {
     background-color: cadetblue;
-    width: 100%;
-    height: 100%;
+}
+
+/* TICKEET DATA */
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .data-window {
     width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 .data-input {
@@ -26,8 +37,12 @@ main {
     width: 100%;
 }
 
-.data-input > div {
-    text-align: center;
+.data-input > div:nth-child(2) {
+    margin: 0 20px;
+}
+
+.label-space {
+    margin-bottom: 10px;
 }
 
 label {
@@ -36,4 +51,48 @@ label {
 
 input {
     border: 1px solid cadetblue;
+    border-radius: 10px;
+    height: 2rem;
+}
+
+button {
+    color: cadetblue;
+    border: 1px solid cadetblue;
+    margin: 40px 0 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* TICKET RESULT */
+#ticket-result {
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.result-window {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.details {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 100px;
+    display: flex;
+}
+
+#fill-name {
+    background-color: gray;
+    padding: 10px;
+}
+
+#fill-details {
+    padding: 10px;
 }

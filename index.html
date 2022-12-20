@@ -10,37 +10,79 @@
         <title>Calcolo del prezzo del biglietto del treno</title>
     </head>
     <body>
-        <main>
+        <section id="ticket-data">
+            <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
             <div class="data-window">
                 <div class="data-input">
                     <div>
-                        <label for="username">Nome e cognome</label>
-    
-                        <br>
+                        <div class="label-space">
+                            <label for="username">Nome e Cognome</label>
+                        </div>
     
                         <input type="text" id="username">
                     </div>
                     <div>
-                        <label for="distance">Chilometri da percorrere</label>
-            
-                        <br>
+                        <div class="label-space">
+                            <label for="distance">Chilometri da percorrere</label>
+                        </div>
             
                         <input type="text" id="distance">
                     </div>
             
                     <div>
-                        <label for="years">Età del passeggero</label>
-            
-                        <br>
+                        <div class="label-space">
+                            <label for="years">Età del passeggero</label>
+                        </div>
             
                         <input type="text" id="years">
                     </div>
                 </div>
-
     
-                <input type="submit" id="submit-button">
+    
+                <button id="submit-button">Genera</button>
+    
+                <button>Annulla</button>
             </div>
-        </main>
+        </section>
+
+        <section id="ticket-result">
+            <h2>IL TUO BIGLIETTO</h2>
+
+            <div class="result-window">
+                <h3>DETTAGLIO PASSEGGERI</h3>
+
+                <div class="details">
+                    <div id="fill-name">
+                        <h3>NOME PASSEGGERO</h3>
+                    </div>
+
+                    <div id="fill-details">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codice CP</th>
+                                    <th>Costo Biglietto</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td id="offer"></td>
+                                    <td id="carrozza"></td>
+                                    <td id="code"></td>
+                                    <td id="price"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
 
 
         <script type="text/javascript" src="js/script.js"></script>
