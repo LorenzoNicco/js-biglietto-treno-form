@@ -18,12 +18,14 @@
 // MILESTONE 1
 // richiesta chilometri
 let km = document.getElementById('distance');
+km = parseInt(km);
 
 console.log('km', km, typeof km, isNaN(km));
 console.log('Debug ok');
 
 // richiesta età
-const age = document.getElementById('years');
+let age = document.getElementById('years');
+age = parseInt(age);
 
 console.log('age', age, typeof age, isNaN(age));
 console.log('Debug ok');
@@ -44,3 +46,22 @@ const over65Ticket = (ticketPrice * 0.6).toFixed(2);
 
 console.log('over65Ticket', over65Ticket, typeof over65Ticket, isNaN(over65Ticket));
 console.log('Debug ok');
+
+// generazione output
+const submitButton = document.getElementById('submit-button');
+
+submitButton.addEventListener('click', 
+    function () {
+        console.log('I dati sono stati inviati');
+        
+        if (age < 18) {
+            console.log('Il costo del tuo biglietto è di euro' + under18Ticket);
+        }
+        else if (age >= 65) {
+            console.log('Il costo del tuo biglietto è di euro' + over65Ticket);
+        }
+        else {
+            console.log('Il costo del tuo biglietto è di euro' + ticketPrice);
+        }
+    }
+);
