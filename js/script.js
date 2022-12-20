@@ -14,3 +14,33 @@
         1. L'utente può inserire i dati e visualizzare il calcolo finale con il prezzo.
         2. Recap dei dati e output del prezzo finale stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo).
 */
+
+// MILESTONE 1
+// richiesta chilometri
+let km = document.getElementById('distance');
+
+console.log('km', km, typeof km, isNaN(km));
+console.log('Debug ok');
+
+// richiesta età
+const age = document.getElementById('years');
+
+console.log('age', age, typeof age, isNaN(age));
+console.log('Debug ok');
+
+// prezzo biglietto
+const ticketPrice = (km * 0.21).toFixed(2);
+
+console.log('ticketPrice', ticketPrice, typeof ticketPrice, isNaN(ticketPrice));
+console.log('Debug ok');
+
+const under18Ticket = (ticketPrice * 0.8).toFixed(2);
+
+console.log('under18Ticket', under18Ticket, typeof under18Ticket, isNaN(under18Ticket));
+console.log('Debug ok');
+
+
+const over65Ticket = (ticketPrice * 0.6).toFixed(2);
+
+console.log('over65Ticket', over65Ticket, typeof over65Ticket, isNaN(over65Ticket));
+console.log('Debug ok');
