@@ -6,3 +6,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/********************************************** 
+    MILESTONE 2
+**********************************************/
+main {
+    background-color: cadetblue;
+    width: 100%;
+    height: 100%;
+}
+
+.data-window {
+    width: 1200px;
+}
+
+.data-input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.data-input > div {
+    text-align: center;
+}
+
+label {
+    color: cadetblue;
+}
+
+input {
+    border: 1px solid cadetblue;
+}
