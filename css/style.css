@@ -119,3 +119,8 @@ th {
     width: 200px;
     text-align: start;
 }
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
