@@ -99,14 +99,8 @@ submitButton.addEventListener('click',
         document.getElementById('fill-name').innerHTML = identity.value;
 
         console.log('identity', identity, typeof identity);
-
-        km = parseInt(km.value);
-
-        console.log('km', km, typeof km, isNaN(km));
-
-        console.log('I dati sono stati inviati');
-
-        const ticketPrice = (km * 0.21).toFixed(2);
+        
+        const ticketPrice = parseInt((km.value * 0.21).toFixed(2));
 
         console.log('ticketPrice', ticketPrice, typeof ticketPrice, isNaN(ticketPrice));
         console.log('Debug ok');
